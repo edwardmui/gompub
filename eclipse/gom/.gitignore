@@ -1,0 +1,49 @@
+#ejm: for java project that auto build .class files in /bin/
+/bin/
+
+#ejm: logs directory for storing client*.txt and server*.txt log files controlled by in resources/*logging.properties
+/logs/*.txt
+/logs/*.txt.lck
+/logs/*
+
+#ejm: The following was from this page.
+#https://medium.com/@petehouston/typical-gitignore-for-a-gradle-java-project-52cbe079a99c
+
+# Created by https://www.gitignore.io/api/java,gradle
+
+### Java ###
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+#ejm: commented out *.jar so to keep mariadb*.jar and snakeyaml*.jar for easier java eclipse project building without going to central repos
+#*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+### Gradle ###
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+# End of https://www.gitignore.io/api/java,gradle
